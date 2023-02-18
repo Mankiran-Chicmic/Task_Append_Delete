@@ -1,0 +1,16 @@
+<h1>Login Form</h1>
+<br>
+<form [formGroup]="xForm" (ngSubmit)="loginUser(xForm.value)">
+    <input type="text" placeholder="Enter Name" name="name" formControlName="user">
+    <br>
+    <span style="color:brown"*ngIf="user && user.invalid && user.touched">This field is not valid</span>
+    <br>
+    <input type="password" placeholder="Enter Password" name="password" formControlName="password" >
+    <br>
+    <span style="color:brown"*ngIf="password && password.invalid && password.touched">This field is not valid</span>
+    <br>
+    <button (click)="print(xForm.value.user)" [disabled]="xForm.invalid">Login</button>
+      <br><br>
+      <!-- <app-comp2></app-comp2> -->
+    </form>
+   

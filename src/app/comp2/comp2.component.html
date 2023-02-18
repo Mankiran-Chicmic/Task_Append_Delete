@@ -1,0 +1,6 @@
+<table>
+    <tr *ngFor="let i of a;let j=index">
+         <button (click)=delete(j)>delete</button>
+         <td>{{i}}</td>
+    </tr>
+</table>
