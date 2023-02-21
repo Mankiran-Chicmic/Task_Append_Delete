@@ -1,1 +1,2 @@
-export let arr:any=[]
+//import { Product } from "./products";
+export let allProducts:any =[]
